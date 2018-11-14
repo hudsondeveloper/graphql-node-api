@@ -1,3 +1,23 @@
-console.log('hello word');
+import * as express from 'express';
 
-let a: string = 'Hello';
+class App{
+
+public express: express.Application;
+
+    constructor(){
+        this.express = express();
+    }
+
+    private middleware(): void {
+
+        this.express.use('/hello',(req:express.Request,res:express.Response,next:express.NextFunction)=>{
+            res.send(
+                {
+                    hello:'hello word'
+                }
+            )
+        });
+    }
+}
+
+export default new App().express
