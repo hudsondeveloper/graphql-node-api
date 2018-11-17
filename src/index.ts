@@ -20,7 +20,6 @@ db.sequelize.sync().then(()=>{
 db.sequelize.sync({ force: true })
 .then(() => {
   console.log(`Database & tables created!`)
- // console.log(server.address().port+'porta')
   server.listen(port);
  // server.on(`error`,onError(server));
   server.on('listening',onListening(server));
