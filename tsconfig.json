@@ -1,12 +1,12 @@
 {
     "compilerOptions": {
-        "target": "es6",
-        "module": "commonjs",
         "lib": [
             "esnext"
-        ]
+        ],
+        "target": "es6",
+        "module": "commonjs"
     },
-    "compileOnSave":false,
+    "compileOnSave": false,
     "include": [
         "src/**/*.ts"
     ],
