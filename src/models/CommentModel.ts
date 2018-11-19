@@ -10,8 +10,8 @@ export interface CommentAttributes{
     comment?:string;
     post?:string;
     user?:string;
-    createdAT?:string;
-    updatedAT?:string;
+    createdAt?:string;
+    updatedAt?:string;
 }
 
 export interface CommentInstance extends Sequelize.Instance<CommentAttributes>{}

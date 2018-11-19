@@ -4,10 +4,10 @@ type Post {
     title:String!
     content:String!
     photo:String!
-    createdAT:String!
-    updatedAT:String!
+    createdAt:String!
+    updatedAt:String!
     author:User!
-    comments:[Comment!]!
+    comments(first:Int, offset: Int):[Comment!]!
 }
 
 input PostInput {

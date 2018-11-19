@@ -5,8 +5,8 @@ type Comment {
     comment:String!
     user:User!
     post:Post!
-    createdAT:String!
-    updatedAT:String!
+    createdAt:String!
+    updatedAt:String!
 }
 
 input CommentInput {
@@ -17,7 +17,7 @@ input CommentInput {
 `;
 
 const commentQueries =`
-commentsByPost(post:ID!,first:Int,offset:Int):[Comment!]!
+commentsByPost(postID:ID!,first:Int,offset:Int):[Comment!]!
 `;
 
 const commentMutations = `

@@ -5,8 +5,9 @@ type User {
     name:String!
     email:String!
     photo:String
-    createdAT:String!
-    updatedAT:String!
+    createdAt:String!
+    updatedAt:String!
+    posts(first:Int, offset: Int):[Post!]!
 }
 
 input UserCreateInput {
